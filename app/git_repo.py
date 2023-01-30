@@ -49,7 +49,8 @@ class Repository(object):
         git_dir = "{0}/{1}".format(self.dir, GIT_EXTENSION)
         if not os.path.exists(git_dir):
             print("cloning: {0}".format(self.url))
-            Repo.clone_from(self.url, self.dir)
+            repo = Repo.clone_from(self.url, self.dir)
+            repo.git.submodule('update', '--init')
 
     def pull(self) -> bool:
         """
