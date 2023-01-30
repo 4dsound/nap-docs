@@ -15,8 +15,9 @@ Generates the NAP Framework system documentation, available at [docs.nap.tech](h
 - [doxygen](https://doxygen.nl/)
 - [graphviz](https://graphviz.org/)
 - [git](https://git-scm.com/)
+- [GitPython](https://github.com/gitpython-developers/GitPython/)
 
-## Installation
+## Installation of the virtual python environment (pipenv)
 Create a virtual python environment for the project and install all required python dependencies:
 
 ```shell
@@ -25,7 +26,7 @@ $ cd nap-docs
 $ pipenv install
 ```
 
-## Build
+## Build using pipenv
 
 Run the `build.py` script inside the `app` directory to auto-generate system documentation using `doxygen`. The script clones and pulls the NAP repo if required. The result will be copied into the `docs` directory.
 ```shell
@@ -33,4 +34,12 @@ $ pipenv shell
 $ cd app
 $ python build.py
 $ exit
+```
+
+## Build without pipenv
+
+Make sure all dependencies are installed first!
+```shell
+$ cd app
+$ python build.py
 ```
