@@ -221,11 +221,29 @@ STRIP_FROM_INC_PATH    = $(NAP_WORKING_DIR)\core\src \
                          $(NAP_WORKING_DIR)\modules\napcalendar\src \
                          $(NAP_WORKING_DIR)\modules\napasio\src \
                          $(NAP_WORKING_DIR)\modules\napopencv\src \
+                         $(NAP_WORKING_DIR)\modules\naplookingglass\src \
+                         $(NAP_WORKING_DIR)\modules\nappythonparameter\src \
+                         $(NAP_WORKING_DIR)\modules\napparametergui\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\napcontrol\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\napguilayout\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\napnativefiledialog\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\napsettings\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\napturboactivate\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\spatialbinaural\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\spatialcore\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\spatialdsp\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\spatialgui\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\spatialheadphones\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\spatialimplementations\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\spatialmonitor\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\spatialmultispeaker\src \
+                         $(NAP_WORKING_DIR)\4dsound_modules\spatialsoundobject\src \
 
 # If the SHORT_NAMES tag is set to YES, doxygen will generate much shorter (but
 # less readable) file names. This can be useful is your file systems doesn't
 # support long names like on DOS, Mac, or CD-ROM.
 # The default value is: NO.
+
 
 SHORT_NAMES            = NO
 
