@@ -7,10 +7,6 @@ This tutorial describes how to create and include a custom [PythonShape](@ref na
 # Developing the Shape
 
 
-## Anatomy of a Python Shape script.
-
-
-
 A [PythonShape](@ref nap::spatial::PythonShape) is a [Shape](@ref nap::spatial::Shape) which is defined as a Python class. The Python class has to implement three functions: `__init__`, `getParticles`, and `update`.
 
 ## The 'init' function: intialising custom parameters
@@ -75,7 +71,7 @@ For our example shape, an algorithm is implemented here which position particles
         return particles
 ~~~
 
-## Miscellaneous: the 'update' function
+## The 'update' function
 
 ~~~{py}
     def update(self, deltaTime):
