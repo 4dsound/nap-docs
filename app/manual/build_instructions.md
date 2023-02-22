@@ -50,7 +50,7 @@ This is a fork from the NAP framework sources, with a few adjustments in the bui
 
 **thirdparty**
 
-Next the the nap directory clone the thirdparty repository from GitHub:
+Next to the nap directory clone the thirdparty repository from GitHub:
 https://github.com/4dsound/thirdparty
 
 The thirdparty repository contains all code, libraries and software dependencies that are needed to develop, build and run NAP and spatial sound software.
@@ -89,13 +89,6 @@ git submodule update --init --recursive
 cd apps
 git clone https://github.com/4dsound/4dsound
 ```
-
-Repositories and module dependencies
----
-
-Below is a diagram that describes how all repositories and the modules they contain depend on one another.
-
-![4DSOUND module architecture](/images/4dsound_modules.png)
 
 Build a platform release package of the framework
 ---
