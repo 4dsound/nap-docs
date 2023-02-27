@@ -1,4 +1,4 @@
-Writing spatial sound effects
+Writing spatial sound effects {#effects}
 ===
 
 Introduction
@@ -8,7 +8,7 @@ As an example of a spatial sound effect we will write a feedback delay of which 
 
 Architecture of a spatial effect
 ===
-A spatial effect is defined in C++ by three classes that work together to describe the behaviour of the effect. The [Effect](@ref nap::spatial::Effect), the [EffectInstance](@ref nap::spatial::EffectInstance) and The [EffectProcessor](@nap::spatial::EffectProcessor). Because Effect and EffectProcessor classes usually are not very large and because all three classes' roles are strongly entangled it is advised to define them together in a single header/cpp file dedicated to the effect.
+A spatial effect is defined in C++ by three classes that work together to describe the behaviour of the effect. The [Effect](@ref nap::spatial::Effect), the [EffectInstance](@ref nap::spatial::EffectInstance) and The [EffectProcessor](@ref nap::spatial::EffectProcessor). Because Effect and EffectProcessor classes usually are not very large and because all three classes' roles are strongly entangled it is advised to define them together in a single header/cpp file dedicated to the effect.
 
 In order to define a spatial effect, include the following headers in your effect's header:
 
@@ -109,7 +109,7 @@ public:
     using ParallelNodeEffectProcessor<audio::DelayNode>::ParallelNodeEffectProcessor;
 };
 ~~~
-Note that this class has no need to define any methods of its own, because it's derived from the templated base class ParallelNodeEffectProcessor. This class takes as template argument an audio [Node](@red nap::audio::Node) type. This Node is required to only have a single audio input and output because it is supposed to implement the effect processing for one single particle.
+Note that this class has no need to define any methods of its own, because it's derived from the templated base class ParallelNodeEffectProcessor. This class takes as template argument an audio [Node](@ref nap::audio::Node) type. This Node is required to only have a single audio input and output because it is supposed to implement the effect processing for one single particle.
 
 When one single Node is not enough to implement the audio processing for a single particle for this effect, it is possible to derive an effect processor from the base class [EffectProcessor](@ref EffectProcessor) directly, and overwrite its method `EffectProcessor::createAudioObject()` that returns an [AudioObjectInstance](@ref nap::audio::AudioObjectInstance) that can implement a more complicated DSP containing multiple nodes.
 
