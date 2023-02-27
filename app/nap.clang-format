@@ -979,7 +979,11 @@ EXCLUDE                = $(NAP_WORKING_DIR)/napkin \
                          $(NAP_WORKING_DIR)/license.md \
                          $(NAP_WORKING_DIR)/for_source_readme-what_is_where.md \
                          $(NAP_WORKING_DIR)/packaging_staging \
-                         $(NAP_WORKING_DIR)/styleguide
+                         $(NAP_WORKING_DIR)/styleguide \
+                         $(NAP_WORKING_DIR)/4dsound_modules/spatialheadphones/src/Spatial/Binaural/Binauralizer/delaunay \
+                         $(NAP_WORKING_DIR)/modules/napaudioadvanced/README.md
+
+
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded
