@@ -9,6 +9,7 @@
   --link: #a0a0a0;
   --text: #c0c0c0;
   --header: #8D8D8D;
+  --table: #303034;
 }
 
 
@@ -630,7 +631,7 @@ table.memberdecls {
   font-weight: normal;
   text-shadow:none;
   background-image:none;
-  background-color: #262626;
+  background-color: var(--table);
   /* opera specific markup */
   box-shadow:  none;
   /* firefox specific markup */
@@ -1319,7 +1320,7 @@ background-image: none;
 }
 .ui-resizable-e{
 	background-image: none;
-	background-color: #262626;
+	background-color: var(--table);
 }
 
 ::-webkit-scrollbar {
