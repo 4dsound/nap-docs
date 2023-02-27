@@ -1,5 +1,18 @@
  /* The standard CSS for doxygen 1.8.4 */
 
+
+:root {
+  --bg: #242427;
+  /*--code: #54a8ff;*/
+  /* --code: #e5e8ff; */
+  --code: #a5d1ff;
+  --link: #a0a0a0;
+  --text: #c0c0c0;
+  --header: #8D8D8D;
+  --table: #303034;
+}
+
+
 @font-face {
     font-family: 'manrope';
     src: url('Manrope-Regular.ttf') format('truetype');
@@ -11,7 +24,7 @@
 }
 
 body{
-	background-color: #2D2D2D;
+	background-color: var(--bg);
     margin: 0em;
     font-size: 1rem;
     max-width: 850px;
@@ -21,7 +34,7 @@ body{
 body, table, div, p, dl,
 table.directory, #nav-tree,#nav-tree .label {
 	font: 400 0.965em/1.5em 'manrope',sans-serif;
-	color: #CDCDC3;
+	color: var(--text);
 	letter-spacing: 0.01em;
 }
 
@@ -53,7 +66,7 @@ pre.fragment, div.line,
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     font-size: 1rem;
-   	background-color: #8D8B84;
+   	background-color: var(--header);
     color: #FFFFFF;
 	padding: 4px 0px;
 }
@@ -129,7 +142,7 @@ h1.glow, h2.glow, h3.glow, h4.glow, h5.glow, h6.glow {
 }
 
 dt {
-	color: #AEACA4;
+	color: var(--code);
 	font-weight: normal;
 }
 div.multicol {
@@ -163,7 +176,7 @@ h3.version {
   text-align: center;
 }
 div.qindex, div.navtab {
-	background-color: #2D2D2D;
+	background-color: var(--bg);
 	border: none;
 	text-align: center;
 }
@@ -187,7 +200,7 @@ div.navtab {
 
 /* @group Link Styling */
 a, a:visited {
-	color: #AEACA4;
+	color: var(--link);
 	text-decoration: none;
 }
 
@@ -197,14 +210,14 @@ a:hover {
 }
 
 a.el, a.el:visited {
-	text-decoration: underline #AEACA4 solid;
+	text-decoration: underline var(--link) solid;
  	text-underline-offset: 30%;
-	color: #AEACA4;
+	color: var(--link);
   font-weight: normal;
 }
 
 .contents a {
-	text-decoration: underline #AEACA4 solid;
+	text-decoration: underline var(--link) solid;
 	text-underline-offset: 30%;
   	font-weight: normal;
 }
@@ -214,7 +227,7 @@ a.el, a.el:visited {
 }
 
 .contents a:visited {
-	color: #AEACA4;
+	color: var(--link);
 }
 
 .contents a:hover {
@@ -224,7 +237,7 @@ a.el, a.el:visited {
 }
 
 .directory a.el {
-	color: #CDCDC3;
+	color: var(--text);
 	text-transform: none;
 }
 
@@ -234,7 +247,7 @@ a.el, a.el:visited {
 }
 
 table.classindex a.el {
-	color: #CDCDC3
+	color: var(--text)
 }
 
 table.classindex a.el:hover {
@@ -244,7 +257,7 @@ table.classindex a.el:hover {
 
 
 a.qindex, a.qindex:visited  {
-	color: #CDCDC3;
+	color: var(--text);
 	text-decoration: none;
 	font-weight: normal;
 	border-bottom: none;
@@ -256,22 +269,22 @@ a.qindex:hover {
 }
 
 a.qindexHL {
-	color: #AEACA4;
+	color: var(--link);
 	border: none;
 }
 
 .contents a.qindexHL:visited {
-	color: #AEACA4;
+	color: var(--link);
 }
 
 a.code, a.code:visited {
-	color: #AEACA4;
+	color: var(--code);
 	font-weight: normal;
 	text-decoration: none;
 }
 
 a.codeRef, a.codeRef:visited {
-	color: #AEACA4;
+	color: var(--code);
 	font-weight: normal;
 	text-decoration: none;
 }
@@ -344,14 +357,14 @@ span.lineno {
 	padding-right: 4px;
 	text-align: right;
 	border-right: none;
-	background-color: #2D2D2D;
+	background-color: var(--bg);
   white-space: pre;
 }
 span.lineno a {
-	background-color:  #2D2D2D;
+	background-color:  var(--bg);
 }
 span.lineno a:hover {
-	background-color: #2D2D2D;
+	background-color: var(--bg);
 }
 div.ah {
 	background-color: #FFFFFF;
@@ -426,7 +439,7 @@ address.footer {
 
 address.footer a {
 	text-decoration: none;
-	color: #8D8B84;
+	color: var(--header);
 }
 
 img.footer {
@@ -436,38 +449,38 @@ img.footer {
 }
 /* @group Code colorization */
 span.keyword {
-	color: #CDCDC3;
+	color: var(--text);
 }
 span.keywordtype {
-	color: #CDCDC3;
+	color: var(--text);
 }
 span.keywordflow {
-	color: #CDCDC3;
+	color: var(--text);
 	font-weight: bold;
 }
 span.comment {
-	color: #8D8B84
+	color: var(--header)
 }
 span.preprocessor {
-	color: #8D8B84
+	color: var(--header)
 }
 span.stringliteral {
-	color: #D6FFA3
+	color: var(--code)
 }
 span.charliteral {
-	color: #D6FFA3
+	color: var(--code)
 }
 span.vhdldigit {
-	color: #D6FFA3
+	color: var(--code)
 }
 span.vhdlchar {
-	color: #D6FFA3
+	color: var(--code)
 }
 span.vhdlkeyword {
-	color: #D6FFA3
+	color: var(--code)
 }
 span.vhdllogic {
-	color: #D6FFA3
+	color: var(--code)
 }
 blockquote {
   background-color: #F7F8FB;
@@ -537,14 +550,14 @@ table.memberdecls {
 .mdescLeft, .mdescRight,
 .memItemLeft, .memItemRight,
 .memTemplItemLeft, .memTemplItemRight, .memTemplParams {
-	background-color: #2D2D2D;
+	background-color: var(--bg);
 	border: none;
 	margin: 4px;
 	padding: 0px 0 0 8px;
 }
 .mdescLeft, .mdescRight {
 	padding: 0px 8px 4px 8px;
-	color: #8D8B84;
+	color: var(--header);
 	font-style: italic;
 	font-size: .9rem;
 }
@@ -608,7 +621,7 @@ table.memberdecls {
 }
 .memname td {
 	vertical-align: bottom;
-	color: #CDCDC3;
+	color: var(--text);
 }
 .memproto, dl.reflist dt {
 	border: none;
@@ -618,7 +631,7 @@ table.memberdecls {
   font-weight: normal;
   text-shadow:none;
   background-image:none;
-  background-color: #262626;
+  background-color: var(--table);
   /* opera specific markup */
   box-shadow:  none;
   /* firefox specific markup */
@@ -627,7 +640,7 @@ table.memberdecls {
 	border:  none;
   border-top-width: 0;
   background-image: none;
-  background-color: #2D2D2D;
+  background-color: var(--bg);
   /* opera specific markup */
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -655,7 +668,7 @@ dl.reflist dd {
 	white-space: nowrap;
 }
 .paramname {
-	color: #CDCDC3;
+	color: var(--text);
 	white-space: nowrap;
 }
 .paramname em {
@@ -674,12 +687,12 @@ dl.reflist dd {
   	font-style: italic;
   	font-weight: normal;
   	text-shadow:none;
-	background-color: #CDCDC3;
+	background-color: var(--text);
 	display: inline;
 	margin: 0 16px 0 0;
 	padding-left: 4px;
 	padding-right: 6px;
-	background-color: #2D2D2D;
+	background-color: var(--bg);
 	color: #FFFFFF;
 }
 .params .paramtype {
@@ -705,9 +718,9 @@ span.mlabels {
   margin-left: 8px;
 }
 span.mlabel {
-  background-color:#2D2D2D; /*grey*/
+  background-color:var(--bg); /*grey*/
 	text-shadow:none;
-	color: #8D8B84;/*blue*/
+	color: var(--header);/*blue*/
 	margin-right: 4px;
 	padding: 2px 3px;
 	border-radius: 0px;
@@ -720,8 +733,8 @@ span.mlabel {
 /* these are for tree view when not used as main index */
 div.directory {
   margin: 10px 0px;
-  border-top: 1px solid #2D2D2D;
-  border-bottom: 1px solid #2D2D2D;
+  border-top: 1px solid var(--bg);
+  border-bottom: 1px solid var(--bg);
   width: 100%;
 }
 
@@ -762,7 +775,7 @@ div.directory {
 }
 .directory tr.even {
 	padding-left: 6px;
-	background-color: #2D2D2D;
+	background-color: var(--bg);
 }
 .directory img {
 	vertical-align: -30%;
@@ -820,7 +833,7 @@ table.doxtable th {
 table.fieldtable {
   /*width: 100%;*/
   margin-bottom: 10px;
-  border: 1px solid #8D8B84;
+  border: 1px solid var(--header);
   border-spacing: 0px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -834,15 +847,15 @@ table.fieldtable {
 }
 .fieldtable td.fieldtype, .fieldtable td.fieldname {
   white-space: nowrap;
-  border-right: 1px solid #8D8B84;
-  border-bottom: 1px solid #8D8B84;
+  border-right: 1px solid var(--header);
+  border-bottom: 1px solid var(--header);
   vertical-align: top;
 }
 .fieldtable td.fieldname {
   padding-top: 3px;
 }
 .fieldtable td.fielddoc {
-  border-bottom: 1px solid #8D8B84;
+  border-bottom: 1px solid var(--header);
   /*width: 100%;*/
 }
 .fieldtable td.fielddoc p:first-child {
@@ -867,7 +880,7 @@ table.fieldtable {
   -moz-border-radius:0;
   -webkit-border-radius:0px;
   border-radius: 0px;
-  border-bottom: 1px solid #8D8B84;
+  border-bottom: 1px solid var(--header);
 }
 .tabsearch {
 	top: 0px;
@@ -927,7 +940,7 @@ table.fieldtable {
   background-image:none;
   background-repeat:no-repeat;
   background-position:right;
-  color:#CDCDC3;
+  color:var(--text);
   font-size: 8pt;
 }
 div.summary
@@ -964,7 +977,7 @@ div.header
 div.headertitle
 {
 	padding: 0px 0px 0px 10px;
-	background-color: #2D2D2D;
+	background-color: var(--bg);
 }
 dl
 {
@@ -1157,7 +1170,7 @@ div.toc li.level4 {
 }
 .inherit_header {
   font-weight: bold;
-  color: #CDCDC3;
+  color: var(--text);
   cursor: pointer;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -1220,7 +1233,7 @@ div.toc li.level4 {
 }
 .tablist a {
 	background-image: none;
-	color: #CDCDC3;
+	color: var(--text);
 	text-shadow:none;
 }
 .tablist a:hover {
@@ -1244,7 +1257,7 @@ div.toc li.level4 {
 }
 .navpath ul {
 	background-image: none;
-	background-color: #2D2D2D;
+	background-color: var(--bg);
 	border: none;
 }
 .navpath li {
@@ -1252,7 +1265,7 @@ div.toc li.level4 {
 }
 .navpath li.navelem a {
 	background-image: none;
-	color: #CDCDC3;
+	color: var(--text);
 	text-shadow:none;/*: none;*/
 	text-decoration: underline;
 	text-decoration-style: none;
@@ -1273,7 +1286,7 @@ font-size: .8rem;
 height: 1rem;
 width: 1rem;
 display: inline-block;
-background-color: #2D2D2D;
+background-color: var(--bg);
 color: #FFFFFF;
 text-align: center;
 border-radius: 0px;
@@ -1282,7 +1295,7 @@ margin-right: 2px;
 }
 /* navtree */
 #nav-tree {
-background-color: #2D2D2D;
+background-color: var(--bg);
 background-image: none;
 font-size: 1rem;
 padding-left: 0.9em
@@ -1294,7 +1307,7 @@ background-image: none;
 	color: #FFFFFF;
 }
 #nav-tree a{
-	color:#CDCDC3;
+	color:var(--text);
 }
 #nav-tree a:hover{
 	color: #FFFFFF;
@@ -1307,7 +1320,7 @@ background-image: none;
 }
 .ui-resizable-e{
 	background-image: none;
-	background-color: #262626;
+	background-color: var(--table);
 }
 
 ::-webkit-scrollbar {
@@ -1323,7 +1336,7 @@ background-image: none;
  
 ::-webkit-scrollbar-thumb {
     border-radius: 0px;
-    background-color: #AEACA4
+    background-color: var(--code)
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -1354,7 +1367,7 @@ background-image: none;
 .sm-dox a:active,
 .sm-dox a.highlighted {
 	font-family: 'manrope', sans-serif;
-    color: #CDCDC3;
+    color: var(--text);
     outline: 0;
     padding-right: 0px;
     padding-left: 0px;
@@ -1365,9 +1378,9 @@ background-image: none;
     font-size: 0.95em;
     background-image: none;
     background: none;
-    background-color: #2D2D2D;
+    background-color: var(--bg);
     text-transform: uppercase;
-    text-decoration: underline #CDCDC3 solid;
+    text-decoration: underline var(--text) solid;
     text-underline-offset: 40%;
 }
 
@@ -1380,7 +1393,7 @@ background-image: none;
     background-image: none;
     text-shadow: none;
     background-color: #0f100f;
-    border: 2px solid #CDCDC3;
+    border: 2px solid var(--text);
 }
 
 a.SRScope {
@@ -1404,7 +1417,7 @@ a.SRScope {
   background-image: none;
   text-shadow: none;
   background-color: #0f100f;
-  color: #CDCDC3;
+  color: var(--text);
 }
 
 .sm-dox ul a:hover
@@ -1426,25 +1439,25 @@ a.SRScope {
 
 .sm-dox ul a span.sub-arrow 
 {
-    border-color: transparent transparent transparent #CDCDC3;
+    border-color: transparent transparent transparent var(--text);
 }
 
 .sm-dox ul a:hover span.sub-arrow 
 {
-        border-color: transparent transparent transparent  #CDCDC3;
+        border-color: transparent transparent transparent  var(--text);
 }
 
 .sm-dox a span.sub-arrow,
 .sm-dox a:hover span.sub-arrow
 {
-        border-color: #CDCDC3 transparent transparent transparent;
+        border-color: var(--text) transparent transparent transparent;
 }
 
 #MSearchField 
 {
-    background-color: #2d2d2d;
+    background-color: var(--bg);
     background-image: none;
-    color: #AEACA4;
+    color: var(--link);
     height: 36px;
     margin-top: -9px;
     margin-left: -24px;
@@ -1457,12 +1470,12 @@ a.SRScope {
 }
 
 .MSearchBoxActive #MSearchField {
-	color: #CDCDC3;
+	color: var(--text);
 }
 
 #MSearchBox .right {
     background: none;
-    background-color: #CDCDC3;
+    background-color: var(--text);
     height: 19px;
     width: 19px;
     display: none;
@@ -1470,7 +1483,7 @@ a.SRScope {
 
 #MSearchBox .left {
     background: none;
-    background-color: #CDCDC3;
+    background-color: var(--text);
     height: 19px;
     width: 0px;
 }
@@ -1489,7 +1502,7 @@ a.SRScope {
     display: none;
     position: absolute;
     left: 0; top: 0;
-    border: 2px solid #CDCDC3;
+    border: 2px solid var(--text);
     z-index:10000;
     background-color: #0f100f;
     font-family: 'manrope', sans-serif;
@@ -1508,7 +1521,7 @@ div.image
 }
 
 table.markdownTable td, table.markdownTable th {
-	border: 1px solid #8D8B84;
+	border: 1px solid var(--header);
 	padding: 3px 7px 2px;
 }
 
@@ -1526,26 +1539,26 @@ svg .graph polygon {
     fill: transparent;
 }
 svg .node polygon {
-    fill: #CDCDC3;
-    stroke: #8D8B84;
+    fill: var(--text);
+    stroke: var(--header);
     stroke-width: 1px;
 }
 svg .graph .edge polygon{
-    fill: #8D8B84;
-    stroke: #8D8B84;
+    fill: var(--header);
+    stroke: var(--header);
 } 
 svg .graph .edge path {
     fill: none;
-    stroke: #8D8B84;
+    stroke: var(--header);
 }
 svg .graph .node text {
     fill: #000000;
 }
 svg .graph .edge text {
-    fill: #CDCDC3;
+    fill: var(--text);
 }
 div.contents code {
    
-    color: #D6FFA3;
+    color: var(--code);
     font-family: manrope;
 }
