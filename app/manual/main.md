@@ -8,3 +8,11 @@ Welcome to the developer's reference of the [4DSOUND Engine](https://4dsound.net
 
 
 [See our project portfolio](https://4dsound.net/projects) for examples of projects in which the 4DSOUND Engine is used.
+
+
+## Table of Contents
+
+- [Building the 4DSOUND Engine from scratch](@ref build_instructions)
+- [Overview of the spatial sound framework](@ref framework)
+- [Writing spatial sound effects](@ref effects)
+- [Writing python shapes](@ref pythonshapes)

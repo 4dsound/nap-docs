@@ -1,4 +1,4 @@
-Building the 4DSOUND engine from scratch {#build_instructions}
+Building the 4DSOUND Engine from scratch {#build_instructions}
 ===
 Introduction
 ---
