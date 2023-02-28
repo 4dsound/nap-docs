@@ -54,8 +54,6 @@ Apart from sound sources, the `SpatialAudioComponent` manages three effect chain
 - The regular effect chain is applied on a mix (per particle) of the output of these separate input effect chains. The output of this effect chain serves as the input for the [MixdownComponent](@ref nap::spatial::MixdownComponent).
 - The perception effect chain is applied to the output of the regular effect chain for each particle before it is sent to the [SpatializationComponent](@ref nap::spatial::SpatializationComponent) for distribution the the [SpeakerSetup](@ref nap::spatial::SpeakerSetup).
 
-![Signal flow chart of the DSP chain](@ref content/4dsound_effects-flowchart.png)
-
 `SpatialAudioComponent` has methods in order to add effects to its effect chains: `addInputEffect` and `addEffect` and `addPerceptionEffect`.
 
 
