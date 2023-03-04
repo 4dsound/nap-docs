@@ -180,3 +180,14 @@ After following all above steps, the new shape will now be available as an optio
 ![](@ref content/4dsound_pythonshape-in-action.gif)
 
 The python shape in action, with a particle count of 25.
+
+
+# Writing python 'transformations' and 'shape transformations'
+
+It is also possible to create custom [Transformations](@ref nap::spatial::Transformation) and [ShapeTransformations](@ref nap::spatial::ShapeTransformation) in Python. The procedure is very similar as for writing and including python shapes. 
+
+In Napkin, instead of creating a `PythonShape` resource, create a `PythonTransformation` or `PythonShapeTransformation` which links to a python script. 
+
+In the environment script, transformations and shape transformations can be added using the lines `transformations.append("MyTransformation")` and `shapeTransformations.append("MyShapeTransformation")`.
+
+Example scripts can be found in the `\data` folder.
