@@ -1,6 +1,7 @@
 Writing python shapes {#pythonshapes}
 =======================
 
+# Introduction
 
 This tutorial describes how to create and include a custom [PythonShape](@ref nap::spatial::PythonShape) in the 4DSOUND Engine. A [Shape](@ref nap::spatial::Shape) is a class that contains an algorithm which calculates transforms (positions, dimensions and orientations) of one or multiple [Particles](@ref nap::spatial::Particle) in real time. 
 
